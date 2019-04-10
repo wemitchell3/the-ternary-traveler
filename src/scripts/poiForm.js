@@ -10,11 +10,11 @@ const poiForm = {
         //all form elements to the DOM at once using this variable.
         let createFormElement = construct.elementWithTextCreator("form", "Add New Point of Interest")
 
-        createFormElement.appendChild(construct.fieldsetCreator("Name"))
-        createFormElement.appendChild(construct.fieldsetCreator("Description"))
-        createFormElement.appendChild(construct.fieldsetCreator("Cost"))
-        createFormElement.appendChild(construct.fieldsetCreator("Review"))
-        createFormElement.appendChild(construct.fieldsetCreator("Location"))
+        createFormElement.appendChild(construct.fieldsetCreator("name"))
+        createFormElement.appendChild(construct.fieldsetCreator("description"))
+        createFormElement.appendChild(construct.fieldsetCreator("cost"))
+        createFormElement.appendChild(construct.fieldsetCreator("review"))
+        createFormElement.appendChild(construct.fieldsetCreator("location"))
 
         let addPOIButton = construct.buttonCreator("saveButton", "Save POI")
 

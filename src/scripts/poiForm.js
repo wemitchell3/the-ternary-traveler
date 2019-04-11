@@ -14,11 +14,11 @@ const poiForm = {
         createFormElement.appendChild(construct.fieldsetCreator("description"))
         createFormElement.appendChild(construct.fieldsetCreator("cost"))
         createFormElement.appendChild(construct.fieldsetCreator("review"))
-        createFormElement.appendChild(construct.fieldsetCreator("location"))
+        createFormElement.appendChild(construct.dropDownCreator("location"))
 
-        let addPOIButton = construct.buttonCreator("saveButton", "Save POI")
+        let addPOIButton = construct.buttonCreator("saveButton", "Add POI")
 
-        addPOIButton.addEventListener("click", eventHandler.handleClick)
+        addPOIButton.addEventListener("click", eventHandler.handleAddPOIButton)
 
         createFormElement.appendChild(addPOIButton)
 

@@ -16,6 +16,8 @@ const poiStructure = {
           <p class="cost">Cost: ${cost}</p>
           <p class="review">Review: ${review}</p>
           <p class="location">Location: ${location}</p>
+          <button id="editButton--${poi.id}">Edit</button>
+          <button id="deleteButton--${poi.id}">Delete</button>
       </div>
   `
   }

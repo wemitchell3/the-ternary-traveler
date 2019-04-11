@@ -24,11 +24,18 @@ const construct = {
         return button
     },
     fieldsetCreator(dataitem) {
-        const formFieldSet = elementWithTextCreator("fieldset");
+        let formFieldSet = elementWithTextCreator("fieldset");
         formFieldSet.appendChild(elementWithTextCreator("label", `Enter ${dataitem}: `))
         formFieldSet.appendChild(inputCreator("text", `${dataitem}Input`))
+        return formFieldSet
+    },
+    //Still working on this. 
+    dropDownCreator(dataitem) {
+        let formFieldSet = elementWithTextCreator("fieldset");
+        formFieldSet.appendChild(elementWithTextCreator("label", `Select ${dataitem}: `))
+        formFieldSet.appendChild(inputCreator("select", `${dataitem}Input`))
         return formFieldSet
     }
 }
 
-export default construct;
+export default construct
